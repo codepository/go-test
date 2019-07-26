@@ -9,7 +9,12 @@ import (
 )
 
 func InsertToDB(writer http.ResponseWriter, request *http.Request) {
-	db := database.OpenDB()
+	opend, db := OpenDB()
+	if opend {
+		fmt.Println("open success")
+	} else {
+		fmt.Println("open faile:")
+	}
 	uid := util.GetNowtimeMD5()
 	nowTimeStr := util.GetTime()
 	stmt, err := db.Prepare("insert userinfo set username=?,departname=?,created=?,password=?,uid=?")
