@@ -9,7 +9,7 @@ import (
 )
 
 func InsertToDB(writer http.ResponseWriter, request *http.Request) {
-	opend, db := OpenDB()
+	opend, db := database.OpenDB()
 	if opend {
 		fmt.Println("open success")
 	} else {
