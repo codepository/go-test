@@ -3,9 +3,9 @@ package controller
 import (
 	"fmt"
 	"net/http"
-	"util"
 
-	"github.com/database"
+	"github.com/codepository/go-test/database"
+	"github.com/codepository/go-test/util"
 )
 
 func InsertToDB(writer http.ResponseWriter, request *http.Request) {

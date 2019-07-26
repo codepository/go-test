@@ -2,8 +2,8 @@ package database
 
 import (
 	"database/sql"
-	"util"
 
+	"github.com/codepository/go-test/util"
 	_ "github.com/go-sql-driver/mysql"
 )
 

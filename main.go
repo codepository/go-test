@@ -1,10 +1,11 @@
 package main
 
 import (
-	"controller"
 	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/codepository/go-test/controller"
 )
 
 func main() {
